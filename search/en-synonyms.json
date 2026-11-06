@@ -1,0 +1,5 @@
+{
+  "name": "en-synonyms",
+  "format": "solr",
+  "synonyms": "aed, dirham, dirhams\nlpo, local purchase order\nsoa, statement of account"
+}

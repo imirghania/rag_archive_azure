@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block body %}
+<div class="card"><h1>Citation</h1><p class="muted"><code>{{ chunk }}</code> · <code>{{ line }}</code></p>
+<img class="crop" alt="The cited line as scanned" src="/citation/crop?chunk={{ chunk|urlencode }}&line={{ line|urlencode }}">
+<p><a href="javascript:history.back()">Back to the answer</a></p></div>{% endblock %}

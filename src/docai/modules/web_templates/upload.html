@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block body %}
+{% if status %}
+<div class="card"><h1>Upload {{ status.upload_id }}</h1><p>Status: <strong>{{ status.status }}</strong>{% if status.reject_reason %} — <span class="bad">{{ status.reject_reason }}</span>{% endif %}</p>
+{% if status.dossiers %}<table><tr><th>Dossier</th><th>Revision</th><th>Status</th></tr>{% for d in status.dossiers %}<tr><td>{{ d.dossier_id }}</td><td>r{{ d.revision }}</td><td>{{ d.status }}</td></tr>{% endfor %}</table>{% endif %}
+<p><a href="/upload">Upload more</a></p></div>
+{% else %}
+<div class="card"><h1>Upload files</h1>
+  <p class="row"><label>Department <input id="department" value="{{ department }}" size="4"></label>
+  <label>Mode <select id="mode"><option value="dossier">By dossier</option><option value="bulk">Bulk (loose files)</option></select></label>
+  <label>Dossier ID <input id="dossier" placeholder="FIN-C03-S2-F0118"></label></p>
+  <p><input id="files" type="file" multiple accept=".tif,.tiff,.pdf,.doc,.docx,.txt"></p>
+  <p><button id="go" type="button">Check files</button></p>
+  <p id="summary" role="status"></p><p><button id="confirm" type="button" hidden>Confirm and upload</button></p><p id="log" class="muted"></p>
+</div><script src="/static/upload.js"></script>{% endif %}{% endblock %}

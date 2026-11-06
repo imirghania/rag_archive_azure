@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% block body %}
+{% if not task %}<div class="card"><h1>Review</h1><p>No open task for you right now.</p>
+<form method="post" action="/review/next"><input type="hidden" name="csrf" value="{{ csrf }}"><button>Next task</button></form>
+{% if can_escalated %}<form method="post" action="/review/escalated"><input type="hidden" name="csrf" value="{{ csrf }}"><button class="secondary">Escalated tasks</button></form>{% endif %}</div>
+{% else %}
+<div class="card"><h1>Task {{ task.task_id }}</h1><p class="muted">{{ task.dossier_id }} · page {{ task.page_no }} · line {{ task.line_id }} · {{ task.reason }}</p>
+<img class="crop" alt="The line as scanned" src="/review/{{ task.task_id }}/crop"><p><img class="crop" alt="The line with its surrounding lines" src="/review/{{ task.task_id }}/crop?context=1"></p>
+{% if task.suggested_text %}<p>Suggested correction: <strong dir="auto">{{ task.suggested_text }}</strong></p>{% endif %}
+<table><tr><th>Engine</th><th>Reading</th></tr>{% for r in readings %}<tr><td>{{ r.engine }}</td><td dir="auto">{{ r.text }}</td></tr>{% endfor %}</table>
+<form method="post" action="/review/{{ task.task_id }}/decide">
+  <input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="lease_token" value="{{ task.lease_token }}">
+  <p class="row"><button name="decision" value="accept_ocr">Accept OCR</button><button name="decision" value="accept_model">Accept second reader</button>
+  <button name="decision" value="illegible" class="secondary">Illegible</button></p>
+  <p><label>Or type the correct text <input name="text" size="60" dir="auto"></label> <button name="decision" value="correct">Use my text</button></p>
+</form>
+<p class="muted">The lease lasts 15 minutes and renews while this page is open.</p></div>
+<script>setInterval(() => fetch("/review/{{ task.task_id }}/heartbeat", {method: "POST", headers: {"X-CSRF-Token": document.querySelector("meta[name=csrf]").content, "Content-Type": "application/json"}, body: JSON.stringify({lease_token: "{{ task.lease_token }}"})}), 300000);</script>
+{% endif %}{% endblock %}

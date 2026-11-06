@@ -1,0 +1,5 @@
+{
+  "name": "ar-synonyms",
+  "format": "solr",
+  "synonyms": "درهم, دراهم\nعقد, اتفاقية"
+}

@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C90-S1-F0002",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.pdf",
+   "bytes": 1364655,
+   "sha256": "f6bb2417ba8e06155ce527adb291f916c996cc943257ce00ba6f5e7398fd65e0",
+   "pages": 2
+  },
+  {
+   "name": "INV-AR-2026-063.docx",
+   "bytes": 37542,
+   "sha256": "beafd16f0a3261ef9c8e7eda080ee2a34361ce335e7779b8b6358eb90b928a7d"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="{{ dir|default('ltr') }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf" content="{{ csrf }}">
+  <title>{% block title %}Document assistant{% endblock %}</title>
+  <style>
+    :root { --bg:#fafaf8; --fg:#1d1d1b; --muted:#6b6b66; --line:#dcdcd6; --accent:#1f5f8b; --bad:#a3262a; --ok:#2d6a3e; --card:#fff; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#161614; --fg:#ecece8; --muted:#9a9a93; --line:#33332f; --accent:#6db3e0; --bad:#ee7377; --ok:#79c58b; --card:#1e1e1b; } }
+    * { box-sizing: border-box; } body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+    header { display:flex; flex-wrap:wrap; gap:.25rem 1rem; align-items:center; padding:.75rem 1rem; border-block-end:1px solid var(--line); }
+    header a { color:var(--accent); text-decoration:none; } header .who { margin-inline-start:auto; color:var(--muted); }
+    main { max-inline-size:56rem; margin:0 auto; padding:1rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:1rem; margin-block:1rem; }
+    input, select, textarea, button { font:inherit; padding:.5rem .7rem; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); }
+    textarea { inline-size:100%; } button { background:var(--accent); color:#fff; border-color:var(--accent); cursor:pointer; } button.secondary { background:var(--card); color:var(--fg); border-color:var(--line); }
+    .muted { color:var(--muted); } .bad { color:var(--bad); } .ok { color:var(--ok); } table { border-collapse:collapse; inline-size:100%; } th, td { text-align:start; padding:.4rem .5rem; border-block-end:1px solid var(--line); }
+    .flash { padding:.6rem 1rem; border-inline-start:4px solid var(--accent); background:var(--card); margin-block:1rem; } img.crop { max-inline-size:100%; border:1px solid var(--line); background:#fff; }
+    .row { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; } code { font-size:.9em; }
+  </style>
+</head>
+<body>
+<header>
+  <strong>Document assistant</strong>
+  {% for href, label in nav %}<a href="{{ href }}">{{ label }}</a>{% endfor %}
+  <span class="who">{% if user %}{{ user }} · <a href="/logout">Sign out</a>{% endif %}</span>
+</header>
+<main>
+  {% if flash %}<div class="flash" role="status">{{ flash }}</div>{% endif %}
+  {% block body %}{% endblock %}
+</main>
+</body>
+</html>

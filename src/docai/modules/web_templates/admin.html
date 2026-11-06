@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block body %}
+<div class="card"><h1>Dossier status</h1>
+<table><tr><th>Dossier</th><th>Rev</th><th>Status</th><th>Pages</th><th></th></tr>
+{% for d in dossiers %}<tr><td>{{ d.dossier_id }}</td><td>r{{ d.revision }}</td><td>{{ d.status }}</td><td>{{ d.pages_done }}/{{ d.total_pages }}{% if d.pages_failed %} <span class="bad">({{ d.pages_failed }} failed)</span>{% endif %}</td>
+<td><form method="post" action="/admin/reprocess"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="dossier_id" value="{{ d.dossier_id }}"><button class="secondary">Reprocess</button></form></td></tr>
+{% else %}<tr><td colspan="5" class="muted">No dossiers.</td></tr>{% endfor %}</table></div>{% endblock %}

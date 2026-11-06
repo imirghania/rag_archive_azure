@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "dossier_id": "HR-C91-S1-F0003",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 1338656,
+   "sha256": "3f11d574e2a26f47cbea9e05f3dfa341c152fad013aa633b10ab9cfb3b9ae368",
+   "pages": 2
+  },
+  {
+   "name": "TA-2026-021.docx",
+   "bytes": 37274,
+   "sha256": "cfc9d501947a5ee0cd2a738fb6859926ceaa075cc642285ef28a51739f945188"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+EXPENSE POLICY SUMMARY
+Ref: POL-FIN-007
+
+Effective 1 January 2026. Applies to all staff of Marwa Logistics LLC.
+
+1. Allowances
+
+Item | Limit (AED)
+Meal allowance, domestic travel, per day | 120
+Meal allowance, international travel, per day | 250
+Hotel, per night | 650
+Mileage, per km | 0.80
+
+2. Receipts and claims
+
+A receipt is required for any expense above AED 75. Claims must be submitted within 30 days of the expense. Approved claims are reimbursed within 10 working days.
+
+3. Approval limits
+
+Claim amount (AED) | Approver
+Up to 5,000 | Line manager
+Above 5,000 and up to 25,000 | Finance Director
+Above 25,000 | Chief Financial Officer

@@ -1,0 +1,14 @@
+.git
+.venv
+.env
+.env.*
+.local
+samples/out
+tests
+docs
+archive
+__pycache__
+*.pyc
+*.sqlite
+.pytest_cache
+.ruff_cache

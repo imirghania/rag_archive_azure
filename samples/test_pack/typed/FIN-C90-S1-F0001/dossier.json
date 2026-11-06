@@ -1,0 +1,26 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C90-S1-F0001",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.pdf",
+   "bytes": 1404265,
+   "sha256": "fd4682a1170ed9d574e85bdc3c62296988ea1c99160d2646c74ef798dbaffc32",
+   "pages": 2
+  },
+  {
+   "name": "BS-2026-05-001.docx",
+   "bytes": 37323,
+   "sha256": "da8ba5d5304bfae2d9733907eaa05c5e6c77288fbfd6ca1eb2444047a23867ec"
+  },
+  {
+   "name": "POL-FIN-007.txt",
+   "bytes": 645,
+   "sha256": "de3f68bdf1a38d294653742079d680eab07d49cd2546169b225201e2d298d453"
+  }
+ ]
+}

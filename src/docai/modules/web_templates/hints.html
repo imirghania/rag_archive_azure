@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block body %}
+{% if can_hint %}<div class="card"><h2>Add an expert hint</h2>
+<form method="post" action="/hints">
+  <input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="from_answer" value="{{ from_answer or '' }}">
+  <p class="row"><label>Department <input name="department" value="{{ department }}" size="4"></label>
+  <label>Type <select name="type"><option value="context_note">Context note</option><option value="terminology">Terminology</option></select></label></p>
+  <p><label>Text<textarea name="text" rows="3" required dir="auto"></textarea></label></p>
+  <p><label>Terms (one per line, terminology only)<textarea name="terms" rows="3" dir="auto"></textarea></label></p>
+  <p><label>Evidence: chunk ID and line (leave empty for none) <input name="chunk_id" size="45"> <input name="line" size="10"></label></p>
+  <p><button>Submit</button></p></form></div>{% endif %}
+{% if awaiting is not none %}<div class="card"><h2>Waiting for your approval</h2>
+{% for h in awaiting %}<form method="post" action="/hints/{{ h.hint_id }}" class="card"><input type="hidden" name="csrf" value="{{ csrf }}">
+  <p><strong>{{ h.hint_id }}</strong> · {{ h.type }} · by {{ h.author_name }} · evidence: {{ h.evidence_status }}</p>
+  <p dir="auto">{{ h.text }}</p>{% if h.check_results %}<p class="muted">Checks: {{ h.check_results }}</p>{% endif %}
+  <p class="muted">Will be readable by {{ h.audience|length }} group(s).</p>
+  <p class="row"><button name="action" value="approve">Approve</button><input name="reason" placeholder="Reason (for rejecting)"><button name="action" value="reject" class="secondary">Reject</button></p></form>
+{% else %}<p class="muted">Nothing is waiting.</p>{% endfor %}</div>{% endif %}{% endblock %}

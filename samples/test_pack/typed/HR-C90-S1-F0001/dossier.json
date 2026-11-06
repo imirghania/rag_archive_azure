@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "dossier_id": "HR-C90-S1-F0001",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.pdf",
+   "bytes": 1337667,
+   "sha256": "3492cd587599f88841cfcc91d990c233885b77316d07ff6e0a816164e8c203c5",
+   "pages": 2
+  },
+  {
+   "name": "OFR-2026-031.docx",
+   "bytes": 37159,
+   "sha256": "987ee240aece00a601e2daa1bcd2ae45c33f85660932a0256f52579aac93375f"
+  }
+ ]
+}

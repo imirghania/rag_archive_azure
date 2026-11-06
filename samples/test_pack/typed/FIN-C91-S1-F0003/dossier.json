@@ -1,0 +1,26 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C91-S1-F0003",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 1338096,
+   "sha256": "7c9baab7ae453eb243edb93a1c2c9055a9ddce20272bd4248b997b9454134505",
+   "pages": 2
+  },
+  {
+   "name": "PO-2026-0507.docx",
+   "bytes": 37571,
+   "sha256": "e80dc5a071087378b7971d4c6d84f4fc13dea07dbd21082b724271b74a933e71"
+  },
+  {
+   "name": "BM-2026-Q3.txt",
+   "bytes": 789,
+   "sha256": "543f77bb7a9e423a5de9cbd350cd437a9d3bb71f1d8fe326a00093ddf1c63e4d"
+  }
+ ]
+}

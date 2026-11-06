@@ -1,0 +1,26 @@
+{
+ "schema": 1,
+ "dossier_id": "HR-C90-S1-F0002",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.pdf",
+   "bytes": 1304495,
+   "sha256": "0c99921c30a8b96ad459fb20544377bfaa980a24a9ce532df49d28a8451b0ffa",
+   "pages": 2
+  },
+  {
+   "name": "LV-2026-142.docx",
+   "bytes": 37355,
+   "sha256": "21435917100a663219cf6962e27f51eac1d26309ad832dcb80153e78796e3702"
+  },
+  {
+   "name": "TR-2026-009.txt",
+   "bytes": 688,
+   "sha256": "0ba7863a6cd8cdf84a71f25f05cd63ddc2ac40740f10451a8de83e7364ec8009"
+  }
+ ]
+}
