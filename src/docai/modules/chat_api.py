@@ -13,7 +13,7 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Any
 
-from fastapi import Depends, HTTPException
+from fastapi import Depends, HTTPException, Query
 from fastapi.responses import Response
 from PIL import Image
 from pydantic import BaseModel
@@ -60,6 +60,7 @@ class Citation:
     text: str
     document_id: str
     line_key: str
+    page: int = 0
 
 
 @dataclass
@@ -173,7 +174,8 @@ def answer(ctx: Context, *, user_oid: str, scope: list[str], question: str, conv
         for ref in c.citations:
             cid, line_ref = ref.split("#")
             ln = next(x for x in evidence[cid]["lines"] if x["ref"] == line_ref)
-            cites.append(Citation(cid, line_ref, ln["text"], evidence[cid]["document_id"], keys.line_key_of_chunk(cid, line_ref)))
+            cites.append(Citation(cid, line_ref, ln["text"], evidence[cid]["document_id"], keys.line_key_of_chunk(cid, line_ref),
+                                  int(line_ref.split("/")[0][1:])))
     if verdict.blocked_lines:
         text += " " + msg["unverified"]
     elif len(supported) < len(verdict.claims):
@@ -246,13 +248,41 @@ def _lines_of(doc: dict[str, Any]) -> list[dict[str, str]]:
     return [{"ref": r, "text": texts[i] if i < len(texts) else ""} for i, r in enumerate(doc.get("line_refs", []))]
 
 
-def citation_crop(ctx: Context, scope: list[str], chunk_id: str, ref: str) -> bytes:
-    """The picture of the cited line. The chunk must be in the caller's scope; the browser never gets a storage address."""
+def _cited_page(ctx: Context, scope: list[str], chunk_id: str, ref: str) -> tuple[keys.PageRef, str]:
+    """The page and line a citation points at. The chunk must be in the caller's scope."""
     doc = ctx.search.get("docs", chunk_id)
     if doc is None or not set(scope) & set(doc.get("acl_groups", [])) or ref not in doc.get("line_refs", []):
         raise KeyError("citation")  # the same answer for a missing chunk and for one the caller may not see
     page_no, line_id = int(ref.split("/")[0][1:]), ref.split("/")[1]
-    pref = keys.PageRef(doc["dossier_id"], doc["revision"], page_no)
+    return keys.PageRef(doc["dossier_id"], doc["revision"], page_no), line_id
+
+
+def citation_page_image(ctx: Context, scope: list[str], chunk_id: str, ref: str) -> bytes:
+    """The whole page the cited line is on. The browser never gets a storage address."""
+    pref, _ = _cited_page(ctx, scope, chunk_id, ref)
+    return ctx.blobs.read("extracted", pref.dir + "page.png")
+
+
+def citation_page(ctx: Context, scope: list[str], chunk_id: str, refs: list[str]) -> dict[str, Any]:
+    """The page size and the boxes of the cited lines. The first ref is checked against the chunk; the others only have to be on
+    the same page (a page belongs to one dossier, so the same scope covers them). Boxes carry no text: lines.v1 may be stale."""
+    pref, _ = _cited_page(ctx, scope, chunk_id, refs[0])
+    lf = read_model(ctx.blobs, "extracted", pref.dir + "lines.v1.json", LinesFile)
+    boxes = []
+    for ref in refs:
+        if ref.split("/")[0] != refs[0].split("/")[0]:
+            raise KeyError("citation")
+        b = lf.line(ref.split("/")[1]).box  # an unknown line raises KeyError, the same 404
+        boxes.append({"ref": ref, "x0": b.x0, "y0": b.y0, "x1": b.x1, "y1": b.y1})
+    width, height = lf.page_width, lf.page_height
+    if not width or not height:
+        width, height = Image.open(io.BytesIO(ctx.blobs.read("extracted", pref.dir + "page.png"))).size
+    return {"page_no": pref.page_no, "width": width, "height": height, "boxes": boxes}
+
+
+def citation_crop(ctx: Context, scope: list[str], chunk_id: str, ref: str) -> bytes:
+    """The picture of the cited line. The chunk must be in the caller's scope; the browser never gets a storage address."""
+    pref, line_id = _cited_page(ctx, scope, chunk_id, ref)
     crop = f"{pref.dir}crops/{line_id}.png"
     if ctx.blobs.exists("extracted", crop):  # handwritten lines have a stored crop
         return ctx.blobs.read("extracted", crop)
@@ -307,6 +337,14 @@ def create_app(ctx: Context):
     @app.get("/api/citations/{chunk_id}/crop")
     def crop(chunk_id: str, line: str, p: Principal = Depends(principal)):
         return Response(citation_crop(ctx, scope_of(p), chunk_id, line), media_type="image/png")
+
+    @app.get("/api/citations/{chunk_id}/page")
+    def page(chunk_id: str, line: list[str] = Query(), p: Principal = Depends(principal)):
+        return citation_page(ctx, scope_of(p), chunk_id, line)
+
+    @app.get("/api/citations/{chunk_id}/page.png")
+    def page_png(chunk_id: str, line: str, p: Principal = Depends(principal)):
+        return Response(citation_page_image(ctx, scope_of(p), chunk_id, line), media_type="image/png", headers={"Cache-Control": "private, max-age=3600"})
 
     @app.get("/api/hints/suggest")
     def suggest(text: str, p: Principal = Depends(principal)):

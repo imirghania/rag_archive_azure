@@ -1,4 +1,11 @@
 {% extends "base.html" %}{% block body %}
-<div class="card"><h1>Citation</h1><p class="muted"><code>{{ chunk }}</code> · <code>{{ line }}</code></p>
-<img class="crop" alt="The cited line as scanned" src="/citation/crop?chunk={{ chunk|urlencode }}&line={{ line|urlencode }}">
+<div class="card"><h1>Citation</h1>
+{% if page %}
+<p class="muted">Page {{ page.page_no }} · {% for b in page.boxes %}<code>{{ b.ref }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+<div class="pagebox">
+  <img alt="The page as scanned, with the cited lines boxed" src="/citation/page.png?chunk={{ chunk|urlencode }}&line={{ lines[0]|urlencode }}">
+  {% for b in page.boxes %}<div class="box" title="{{ b.ref }}" style="left:{{ '%.3f'|format(b.x0 / page.width * 100) }}%;top:{{ '%.3f'|format(b.y0 / page.height * 100) }}%;width:{{ '%.3f'|format((b.x1 - b.x0) / page.width * 100) }}%;height:{{ '%.3f'|format((b.y1 - b.y0) / page.height * 100) }}%"></div>{% endfor %}
+</div>
+<script>document.querySelector(".box")?.scrollIntoView({block: "center"});</script>
+{% else %}<p class="bad">This citation was not found, or you are not allowed to see it.</p>{% endif %}
 <p><a href="javascript:history.back()">Back to the answer</a></p></div>{% endblock %}

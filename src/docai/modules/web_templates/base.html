@@ -16,6 +16,9 @@
     textarea { inline-size:100%; } button { background:var(--accent); color:#fff; border-color:var(--accent); cursor:pointer; } button.secondary { background:var(--card); color:var(--fg); border-color:var(--line); }
     .muted { color:var(--muted); } .bad { color:var(--bad); } .ok { color:var(--ok); } table { border-collapse:collapse; inline-size:100%; } th, td { text-align:start; padding:.4rem .5rem; border-block-end:1px solid var(--line); }
     .flash { padding:.6rem 1rem; border-inline-start:4px solid var(--accent); background:var(--card); margin-block:1rem; } img.crop { max-inline-size:100%; border:1px solid var(--line); background:#fff; }
+    img.thumb { display:block; max-block-size:3rem; max-inline-size:100%; border:1px solid var(--line); background:#fff; margin-block:.25rem; }
+    .pagebox { position:relative; direction:ltr; display:inline-block; max-inline-size:100%; } .pagebox img { display:block; max-inline-size:100%; outline:1px solid var(--line); background:#fff; }
+    .pagebox .box { position:absolute; border:2px solid var(--accent); background:rgba(31,95,139,.18); pointer-events:none; }
     .row { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; } code { font-size:.9em; }
   </style>
 </head>

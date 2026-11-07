@@ -8,8 +8,10 @@
 {% if answer %}
 <section class="card" aria-live="polite">
   <p dir="auto" class="{{ 'muted' if answer.abstained else '' }}">{{ answer.text }}</p>
-  {% if answer.citations %}<h2>Sources</h2><ul>
-    {% for c in answer.citations %}<li><a href="/citation?chunk={{ c.chunk_id|urlencode }}&line={{ c.ref|urlencode }}">{{ c.ref }}</a> <span dir="auto">“{{ c.text }}”</span></li>{% endfor %}
+  {% if sources %}<h2>Sources</h2><ul>
+    {% for s in sources %}<li><a href="/citation?chunk={{ s.chunk|urlencode }}{% for l in s.lines %}&line={{ l|urlencode }}{% endfor %}">{{ s.label }}</a>
+      <img class="thumb" alt="" src="/citation/crop?chunk={{ s.chunk|urlencode }}&line={{ s.lines[0]|urlencode }}">
+      {% for q in s.quotes %}<br><span dir="auto" class="muted">“{{ q }}”</span>{% endfor %}</li>{% endfor %}
   </ul>{% endif %}
   <form method="post" action="/feedback" class="row"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="answer_id" value="{{ answer.answer_id }}">
     <button name="rating" value="1" class="secondary" aria-label="Helpful">👍</button><button name="rating" value="-1" class="secondary" aria-label="Not helpful">👎</button>

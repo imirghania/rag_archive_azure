@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-from fastapi import Depends, FastAPI, Form, HTTPException, Request
+from fastapi import Depends, FastAPI, Form, HTTPException, Query, Request
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -56,6 +56,17 @@ def _nav(p: Principal) -> list[tuple[str, str]]:
             seen.add(item)
             out.append(item)
     return out
+
+
+def group_sources(citations: list[dict]) -> list[dict]:
+    """One entry per (document, page) cited, in order of first appearance: the link text, the first chunk, the cited line refs and quotes."""
+    groups: dict[tuple[str, int], dict] = {}
+    for c in citations:
+        g = groups.setdefault((c["document_id"], c["page"]), {"label": f"{c['document_id']}, page {c['page']}", "chunk": c["chunk_id"], "lines": [], "quotes": []})
+        if c["ref"] not in g["lines"]:
+            g["lines"].append(c["ref"])
+            g["quotes"].append(c["text"])
+    return list(groups.values())
 
 
 def create_app(ctx: Context, backends: Backends | None = None, *, msal_flow=None, dev_users: dict[str, Principal] | None = None) -> FastAPI:
@@ -177,7 +188,7 @@ def create_app(ctx: Context, backends: Backends | None = None, *, msal_flow=None
             return RedirectResponse("/", status_code=303)
         a = r.json()
         request.session["conversation_id"] = a["conversation_id"]
-        return render(request, "ask.html", p, answer=type("A", (), {**a, "citations": [type("C", (), c) for c in a["citations"]]}), question=question, conversation_id=a["conversation_id"])
+        return render(request, "ask.html", p, answer=type("A", (), a), sources=group_sources(a["citations"]), question=question, conversation_id=a["conversation_id"])
 
     @app.post("/feedback", dependencies=[Depends(form_csrf)])
     def feedback(request: Request, answer_id: str = Form(...), rating: int = Form(...), p: Principal = Depends(session_principal)):
@@ -186,13 +197,23 @@ def create_app(ctx: Context, backends: Backends | None = None, *, msal_flow=None
         return RedirectResponse("/", status_code=303)
 
     @app.get("/citation", response_class=HTMLResponse)
-    def citation(request: Request, chunk: str, line: str, p: Principal = Depends(session_principal)):
-        return render(request, "citation.html", p, chunk=chunk, line=line)
+    def citation(request: Request, chunk: str, line: list[str] = Query(), p: Principal = Depends(session_principal)):
+        r = call(request, "chat", "GET", f"/api/citations/{chunk}/page", params={"line": line})
+        page = r.json() if r.status_code == 200 else None
+        resp = render(request, "citation.html", p, chunk=chunk, lines=line, page=page)
+        resp.status_code = 200 if page else 404
+        return resp
 
     @app.get("/citation/crop")
     def citation_crop(request: Request, chunk: str, line: str, p: Principal = Depends(session_principal)):
         r = call(request, "chat", "GET", f"/api/citations/{chunk}/crop", params={"line": line})
         return Response(r.content, status_code=r.status_code, media_type=r.headers.get("content-type", "image/png"))
+
+    @app.get("/citation/page.png")
+    def citation_page_png(request: Request, chunk: str, line: str, p: Principal = Depends(session_principal)):
+        r = call(request, "chat", "GET", f"/api/citations/{chunk}/page.png", params={"line": line})
+        return Response(r.content, status_code=r.status_code, media_type=r.headers.get("content-type", "image/png"),
+                        headers={"Cache-Control": r.headers.get("cache-control", "no-store")})
 
     # -- upload: pages and a pass-through for the block API ------------------------------------------------------------
     @app.get("/upload", response_class=HTMLResponse)
