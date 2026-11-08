@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "TAX INVOICE",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 640,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Invoice No. INV-3302",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 783,
+    "y1": 404
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 3 March 2008",
+   "box": {
+    "x0": 296,
+    "y0": 420,
+    "x1": 751,
+    "y1": 461
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Customer: Gulf Trading Company",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 1057,
+    "y1": 528
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "Storage and handling, February 2008          Total: AED 12,750",
+   "box": {
+    "x0": 296,
+    "y0": 594,
+    "x1": 1690,
+    "y1": 644
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "Payment terms: 30 days",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 840,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

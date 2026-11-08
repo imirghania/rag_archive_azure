@@ -1,0 +1,14 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C09-S1-F0300",
+ "source": "upload",
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 380432,
+   "sha256": "7b738786b341f3e8e2a1ea886acb2ca8a19d332ac95509f01054c92426343452",
+   "pages": 3
+  }
+ ]
+}

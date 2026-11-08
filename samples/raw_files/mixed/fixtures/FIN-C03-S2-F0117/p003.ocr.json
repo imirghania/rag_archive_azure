@@ -1,0 +1,64 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "4. Use. The Tenant shall use the premises for storage and distribution only.",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 2163,
+    "y1": 355
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "5. Termination. Either party may terminate with ninety days written notice.",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 1992,
+    "y1": 412
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Signed for the Landlord:  ____________________",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 1321,
+    "y1": 529
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "Signed for the Tenant:    ____________________",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 1300,
+    "y1": 587
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

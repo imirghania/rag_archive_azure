@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "TREASURY NOTE",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 738,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/TR/2009/021",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 798,
+    "y1": 406
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 14 January 2010",
+   "box": {
+    "x0": 296,
+    "y0": 420,
+    "x1": 807,
+    "y1": 470
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "Subject: Year-end hedge position",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 1040,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "The 2009 hedge loss was AED 4.2M, as shown in the revised schedule.",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 1886,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "Distribution restricted to the treasury team.",
+   "box": {
+    "x0": 296,
+    "y0": 710,
+    "x1": 1291,
+    "y1": 760
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

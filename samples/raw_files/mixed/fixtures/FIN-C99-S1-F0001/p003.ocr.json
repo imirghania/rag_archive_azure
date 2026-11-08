@@ -1,0 +1,232 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "COMPLAINT FOLLOW-UP",
+   "box": {
+    "x0": 196,
+    "y0": 257,
+    "x1": 1013,
+    "y1": 308
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/TPL/003",
+   "box": {
+    "x0": 196,
+    "y0": 353,
+    "x1": 579,
+    "y1": 396
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 9 June 2008",
+   "box": {
+    "x0": 196,
+    "y0": 411,
+    "x1": 588,
+    "y1": 460
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Subject: Delayed vendor payment",
+   "box": {
+    "x0": 196,
+    "y0": 469,
+    "x1": 924,
+    "y1": 518
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "The vendor reports that invoice INV-3301 was paid twenty days late and asks for a written",
+   "box": {
+    "x0": 196,
+    "y0": 601,
+    "x1": 2137,
+    "y1": 650
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "reply. Please record your follow-up below: one note in English, one in Arabic, and one line that",
+   "box": {
+    "x0": 196,
+    "y0": 659,
+    "x1": 2223,
+    "y1": 708
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "mixes both. Write inside the ruled areas.",
+   "box": {
+    "x0": 196,
+    "y0": 717,
+    "x1": 1072,
+    "y1": 757
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "English note",
+   "box": {
+    "x0": 196,
+    "y0": 1003,
+    "x1": 473,
+    "y1": 1048
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "Vendor will be paid on 5/4 after review.",
+   "box": {
+    "x0": 280,
+    "y0": 1150,
+    "x1": 964,
+    "y1": 1224
+   },
+   "conf": 0.83,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "Reply sent 6/4.",
+   "box": {
+    "x0": 280,
+    "y0": 1260,
+    "x1": 550,
+    "y1": 1334
+   },
+   "conf": 0.8,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L11",
+   "text": "Arabic note (write from right to left)",
+   "box": {
+    "x0": 195,
+    "y0": 1563,
+    "x1": 985,
+    "y1": 1608
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L12",
+   "text": "تمت الموافقة",
+   "box": {
+    "x0": 2015,
+    "y0": 1696,
+    "x1": 2260,
+    "y1": 1747
+   },
+   "conf": 0.81,
+   "style": "handwritten",
+   "lang": "ar",
+   "from_text_layer": false
+  },
+  {
+   "id": "L13",
+   "text": "يرجى المتابعة",
+   "box": {
+    "x0": 2014,
+    "y0": 1805,
+    "x1": 2261,
+    "y1": 1857
+   },
+   "conf": 0.52,
+   "style": "handwritten",
+   "lang": "ar",
+   "from_text_layer": false
+  },
+  {
+   "id": "L14",
+   "text": "Mixed English and Arabic line",
+   "box": {
+    "x0": 196,
+    "y0": 2123,
+    "x1": 846,
+    "y1": 2168
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L15",
+   "text": "تمت الموافقة",
+   "box": {
+    "x0": 2015,
+    "y0": 2256,
+    "x1": 2260,
+    "y1": 2307
+   },
+   "conf": 0.79,
+   "style": "handwritten",
+   "lang": "ar",
+   "from_text_layer": false
+  },
+  {
+   "id": "L16",
+   "text": "Paid 12,500 on 3/4/2008",
+   "box": {
+    "x0": 280,
+    "y0": 2270,
+    "x1": 712,
+    "y1": 2344
+   },
+   "conf": 0.85,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

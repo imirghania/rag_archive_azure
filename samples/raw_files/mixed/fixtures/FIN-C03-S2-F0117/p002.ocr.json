@@ -1,0 +1,106 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "LEASE AGREEMENT",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 814,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Contract No. LA-2008-118",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 893,
+    "y1": 404
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Between Al Noor Properties LLC (the Landlord)",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 1373,
+    "y1": 528
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "and Gulf Trading Company (the Tenant).",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 1208,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "1. Premises. Warehouse on Plot 118, Jebel Ali, area 4,200 square metres.",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 1938,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "2. Term. Three years from 1 April 2008 to 31 March 2011.",
+   "box": {
+    "x0": 296,
+    "y0": 710,
+    "x1": 1606,
+    "y1": 760
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "3. Rent. AED 1,750,000 per year, payable quarterly in advance.",
+   "box": {
+    "x0": 296,
+    "y0": 768,
+    "x1": 1719,
+    "y1": 818
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

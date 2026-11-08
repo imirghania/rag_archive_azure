@@ -18,14 +18,14 @@ from docai.security.access import Principal
 
 from . import bootstrap, pg
 
-FIN_READERS, FIN_EXPERTS, FIN_STEWARDS, FIN_TREASURY, HR_READERS = (f"{i}" * 8 + "-" + f"{i}" * 4 + "-" + f"{i}" * 4 + "-" + f"{i}" * 4 + "-" + f"{i}" * 12 for i in "12345")
+FIN_READERS, FIN_EXPERTS, FIN_STEWARDS, FIN_TREASURY, HR_READERS, HR_EXPERTS, HR_STEWARDS = (f"{i}" * 8 + "-" + f"{i}" * 4 + "-" + f"{i}" * 4 + "-" + f"{i}" * 4 + "-" + f"{i}" * 12 for i in "1234567")
 
 DEV_USERS = {
     "layla": Principal("aaaaaaaa-0000-0000-0000-00000000000a", "Layla Hassan", ["DocAI.Reader"], [FIN_READERS]),
     "sara": Principal("aaaaaaaa-0000-0000-0000-000000000001", "Sara Aziz", ["DocAI.Expert"], [FIN_READERS, FIN_EXPERTS, FIN_TREASURY]),
-    "rana": Principal("aaaaaaaa-0000-0000-0000-000000000002", "Rana Saleh", ["DocAI.Steward"], [FIN_READERS, FIN_STEWARDS]),
+    "rana": Principal("aaaaaaaa-0000-0000-0000-000000000002", "Rana Saleh", ["DocAI.Steward"], [FIN_READERS, FIN_STEWARDS, HR_READERS, HR_STEWARDS]),
     "yousef": Principal("aaaaaaaa-0000-0000-0000-000000000004", "Yousef Karim", ["DocAI.Admin"], []),
-    "huda": Principal("aaaaaaaa-0000-0000-0000-00000000000b", "Huda (HR)", ["DocAI.Reader"], [HR_READERS]),
+    "huda": Principal("aaaaaaaa-0000-0000-0000-00000000000b", "Huda (HR)", ["DocAI.Expert"], [HR_READERS, HR_EXPERTS]),
 }
 
 
@@ -34,7 +34,8 @@ def seed_registry(ctx: Context) -> None:
         ctx.ops.add_department(code, name)
     for gid, dept, kind, name in [(FIN_READERS, "FIN", "reader", "grp-docai-fin-readers"), (FIN_EXPERTS, "FIN", "expert", "grp-docai-fin-experts"),
                                 (FIN_STEWARDS, "FIN", "steward", "grp-docai-fin-stewards"), (FIN_TREASURY, "FIN", "restricted", "grp-docai-fin-treasury"),
-                                (HR_READERS, "HR", "reader", "grp-docai-hr-readers")]:
+                                (HR_READERS, "HR", "reader", "grp-docai-hr-readers"), (HR_EXPERTS, "HR", "expert", "grp-docai-hr-experts"),
+                                (HR_STEWARDS, "HR", "steward", "grp-docai-hr-stewards")]:
         ctx.ops.add_access_group(gid, dept, kind, name)
 
 

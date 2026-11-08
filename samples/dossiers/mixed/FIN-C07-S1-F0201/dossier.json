@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C07-S1-F0201",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 94072,
+   "sha256": "b1de479c2a486a460ac238f5a55ed7407d971a02c7ea5085d15408cc7a22e703",
+   "pages": 1
+  }
+ ]
+}

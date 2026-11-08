@@ -1,0 +1,78 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "HUMAN RESOURCES",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 838,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: HR/2008/007",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 705,
+    "y1": 406
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 5 May 2008",
+   "box": {
+    "x0": 296,
+    "y0": 420,
+    "x1": 702,
+    "y1": 470
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "Subject: Annual leave policy",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 936,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "Employees accrue 30 calendar days of annual leave per year.",
+   "box": {
+    "x0": 296,
+    "y0": 594,
+    "x1": 1670,
+    "y1": 644
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "AL NOOR PROPERTIES LLC",
+   "box": {
+    "x0": 295,
+    "y0": 305,
+    "x1": 994,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Dubai, United Arab Emirates",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 952,
+    "y1": 409
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Ref: ANP/2008/0412",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 762,
+    "y1": 522
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "Date: 12 February 2008",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 838,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "To: The Finance Director, Gulf Trading Company",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 1391,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "Subject: Renewal of warehouse lease, Plot 118",
+   "box": {
+    "x0": 296,
+    "y0": 710,
+    "x1": 1349,
+    "y1": 760
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "Dear Sir,",
+   "box": {
+    "x0": 296,
+    "y0": 826,
+    "x1": 501,
+    "y1": 873
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L12",
+   "text": "We write to confirm that the lease of the warehouse on Plot 118, Jebel Ali,",
+   "box": {
+    "x0": 296,
+    "y0": 942,
+    "x1": 1961,
+    "y1": 992
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L13",
+   "text": "expires on 31 March 2008. The landlord offers renewal for a further three years",
+   "box": {
+    "x0": 296,
+    "y0": 1000,
+    "x1": 2097,
+    "y1": 1050
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L14",
+   "text": "at an annual rent of AED 1,750,000, payable quarterly in advance.",
+   "box": {
+    "x0": 296,
+    "y0": 1058,
+    "x1": 1789,
+    "y1": 1108
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L16",
+   "text": "Please confirm your acceptance in writing by 15 March 2008.",
+   "box": {
+    "x0": 296,
+    "y0": 1174,
+    "x1": 1683,
+    "y1": 1224
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L18",
+   "text": "Yours faithfully,",
+   "box": {
+    "x0": 295,
+    "y0": 1290,
+    "x1": 650,
+    "y1": 1340
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L19",
+   "text": "Al Noor Properties LLC",
+   "box": {
+    "x0": 295,
+    "y0": 1348,
+    "x1": 829,
+    "y1": 1398
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

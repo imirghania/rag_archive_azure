@@ -1,0 +1,316 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "CORRUPTION TEST PAGE 2",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 996,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/TEST/2",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 673,
+    "y1": 406
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "line 0 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 420,
+    "x1": 650,
+    "y1": 470
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "line 1 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 650,
+    "y1": 528
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "line 2 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 650,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "line 3 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 594,
+    "x1": 650,
+    "y1": 644
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "line 4 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 650,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "line 5 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 710,
+    "x1": 650,
+    "y1": 760
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "line 6 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 768,
+    "x1": 650,
+    "y1": 818
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "line 7 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 826,
+    "x1": 650,
+    "y1": 876
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L11",
+   "text": "line 8 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 884,
+    "x1": 650,
+    "y1": 934
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L12",
+   "text": "line 9 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 942,
+    "x1": 650,
+    "y1": 992
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L13",
+   "text": "line 10 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1000,
+    "x1": 678,
+    "y1": 1050
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L14",
+   "text": "line 11 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1058,
+    "x1": 678,
+    "y1": 1108
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L15",
+   "text": "line 12 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1116,
+    "x1": 678,
+    "y1": 1166
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L16",
+   "text": "line 13 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1174,
+    "x1": 678,
+    "y1": 1224
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L17",
+   "text": "line 14 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1232,
+    "x1": 678,
+    "y1": 1282
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L18",
+   "text": "line 15 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1290,
+    "x1": 678,
+    "y1": 1340
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L19",
+   "text": "line 16 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1348,
+    "x1": 678,
+    "y1": 1398
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L20",
+   "text": "line 17 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1406,
+    "x1": 678,
+    "y1": 1456
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L21",
+   "text": "line 18 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1464,
+    "x1": 678,
+    "y1": 1514
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L22",
+   "text": "line 19 of page 2",
+   "box": {
+    "x0": 296,
+    "y0": 1522,
+    "x1": 678,
+    "y1": 1572
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

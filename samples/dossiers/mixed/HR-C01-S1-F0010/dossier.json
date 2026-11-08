@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "dossier_id": "HR-C01-S1-F0010",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 84290,
+   "sha256": "88707b7980153678e63af4d51aed5fb6f9001a9d72be997eb60106f26f828ca5",
+   "pages": 1
+  }
+ ]
+}

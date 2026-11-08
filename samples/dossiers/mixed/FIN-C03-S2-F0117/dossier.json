@@ -1,0 +1,22 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C03-S2-F0117",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "scan_001.tif",
+   "bytes": 344256,
+   "sha256": "e275e6e3e4020699fe0aae80d79b74c1753e926ccdde31c551bd2f094b56e002",
+   "pages": 3
+  },
+  {
+   "name": "scan_002.tif",
+   "bytes": 231696,
+   "sha256": "56a01cb7907c167bafa92805667f01977348b9b1c942388597aff2302b0696fb",
+   "pages": 2
+  }
+ ]
+}

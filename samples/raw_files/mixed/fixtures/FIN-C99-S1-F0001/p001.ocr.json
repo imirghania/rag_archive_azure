@@ -1,0 +1,288 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "INTERNAL MEMORANDUM",
+   "box": {
+    "x0": 196,
+    "y0": 257,
+    "x1": 1082,
+    "y1": 308
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/TPL/001",
+   "box": {
+    "x0": 196,
+    "y0": 353,
+    "x1": 579,
+    "y1": 396
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 14 March 2008",
+   "box": {
+    "x0": 196,
+    "y0": 411,
+    "x1": 658,
+    "y1": 451
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "To: Finance Director",
+   "box": {
+    "x0": 196,
+    "y0": 470,
+    "x1": 644,
+    "y1": 509
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "From: Head of Procurement",
+   "box": {
+    "x0": 196,
+    "y0": 527,
+    "x1": 805,
+    "y1": 567
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "Subject: Renewal of warehouse lease, Plot 118",
+   "box": {
+    "x0": 196,
+    "y0": 585,
+    "x1": 1202,
+    "y1": 634
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "The landlord has offered to renew the warehouse lease on",
+   "box": {
+    "x0": 196,
+    "y0": 751,
+    "x1": 1445,
+    "y1": 791
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "Plot 118 for a further three years. The annual rent is",
+   "box": {
+    "x0": 196,
+    "y0": 809,
+    "x1": 1330,
+    "y1": 858
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "unchanged from the current term.",
+   "box": {
+    "x0": 196,
+    "y0": 867,
+    "x1": 937,
+    "y1": 916
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "Procurement recommends that we accept the offer. The",
+   "box": {
+    "x0": 196,
+    "y0": 983,
+    "x1": 1394,
+    "y1": 1032
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L11",
+   "text": "first quarterly payment falls due on 1 April 2008, so a",
+   "box": {
+    "x0": 196,
+    "y0": 1041,
+    "x1": 1349,
+    "y1": 1090
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L12",
+   "text": "decision is needed this month.",
+   "box": {
+    "x0": 196,
+    "y0": 1099,
+    "x1": 852,
+    "y1": 1139
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L13",
+   "text": "Please approve the renewal and the first payment. Write",
+   "box": {
+    "x0": 196,
+    "y0": 1215,
+    "x1": 1410,
+    "y1": 1264
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L14",
+   "text": "Approved, pay 1,750 by 15/3",
+   "box": {
+    "x0": 1660,
+    "y0": 1252,
+    "x1": 2187,
+    "y1": 1326
+   },
+   "conf": 0.84,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L15",
+   "text": "your approval, your initials and the date in the right margin",
+   "box": {
+    "x0": 195,
+    "y0": 1273,
+    "x1": 1481,
+    "y1": 1322
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L16",
+   "text": "beside this paragraph, then sign below.",
+   "box": {
+    "x0": 196,
+    "y0": 1331,
+    "x1": 1044,
+    "y1": 1380
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L17",
+   "text": "K.A.M.",
+   "box": {
+    "x0": 1660,
+    "y0": 1362,
+    "x1": 1778,
+    "y1": 1436
+   },
+   "conf": 0.8,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L18",
+   "text": "15/3/2008",
+   "box": {
+    "x0": 1660,
+    "y0": 1472,
+    "x1": 1860,
+    "y1": 1546
+   },
+   "conf": 0.86,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L19",
+   "text": "Signature or initials:",
+   "box": {
+    "x0": 196,
+    "y0": 2623,
+    "x1": 582,
+    "y1": 2665
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L20",
+   "text": "K. Al Mansoori",
+   "box": {
+    "x0": 220,
+    "y0": 2778,
+    "x1": 510,
+    "y1": 2856
+   },
+   "conf": 0.82,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

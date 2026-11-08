@@ -1,0 +1,134 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "Background. The warehouse supports the Jebel Ali distribution",
+   "box": {
+    "x0": 296,
+    "y0": 304,
+    "x1": 1713,
+    "y1": 354
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "operation and no comparable site is available at the same rate.",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 1713,
+    "y1": 412
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Recommendation. Procurement recommends accepting the offer.",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 1759,
+    "y1": 528
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "The first quarterly payment falls due on 1 April 2008.",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 1499,
+    "y1": 586
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "Approval. Please indicate your approval below. Payment will",
+   "box": {
+    "x0": 295,
+    "y0": 652,
+    "x1": 1650,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "Approved, pay 1,250 by 15/3",
+   "box": {
+    "x0": 1876,
+    "y0": 668,
+    "x1": 2360,
+    "y1": 740
+   },
+   "conf": 0.71,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "be arranged on receipt of the signed lease.",
+   "box": {
+    "x0": 296,
+    "y0": 710,
+    "x1": 1265,
+    "y1": 760
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "K. Al Mansoori",
+   "box": {
+    "x0": 1902,
+    "y0": 734,
+    "x1": 2154,
+    "y1": 806
+   },
+   "conf": 0.83,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L11",
+   "text": "يرجى المتابعة",
+   "box": {
+    "x0": 1876,
+    "y0": 821,
+    "x1": 2111,
+    "y1": 870
+   },
+   "conf": 0.52,
+   "style": "handwritten",
+   "lang": "ar",
+   "from_text_layer": false
+  }
+ ]
+}

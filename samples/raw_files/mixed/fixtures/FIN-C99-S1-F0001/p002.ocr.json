@@ -1,0 +1,498 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "TAX INVOICE",
+   "box": {
+    "x0": 196,
+    "y0": 257,
+    "x1": 631,
+    "y1": 308
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/TPL/002",
+   "box": {
+    "x0": 196,
+    "y0": 353,
+    "x1": 579,
+    "y1": 396
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 3 March 2008",
+   "box": {
+    "x0": 196,
+    "y0": 411,
+    "x1": 631,
+    "y1": 451
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "Customer: Gulf Trading Company",
+   "box": {
+    "x0": 196,
+    "y0": 469,
+    "x1": 923,
+    "y1": 518
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "Write the quantity, unit price and total in each empty box. Use digits only.",
+   "box": {
+    "x0": 196,
+    "y0": 560,
+    "x1": 1478,
+    "y1": 601
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L6",
+   "text": "Item",
+   "box": {
+    "x0": 216,
+    "y0": 825,
+    "x1": 313,
+    "y1": 858
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "Quantity",
+   "box": {
+    "x0": 1196,
+    "y0": 824,
+    "x1": 1370,
+    "y1": 865
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L8",
+   "text": "Unit price",
+   "box": {
+    "x0": 1596,
+    "y0": 824,
+    "x1": 1796,
+    "y1": 865
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "Total (AED)",
+   "box": {
+    "x0": 1976,
+    "y0": 824,
+    "x1": 2205,
+    "y1": 863
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "7",
+   "box": {
+    "x0": 1200,
+    "y0": 955,
+    "x1": 1237,
+    "y1": 1037
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L11",
+   "text": "1,150",
+   "box": {
+    "x0": 1600,
+    "y0": 955,
+    "x1": 1728,
+    "y1": 1037
+   },
+   "conf": 0.78,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L12",
+   "text": "12,250",
+   "box": {
+    "x0": 1980,
+    "y0": 955,
+    "x1": 2139,
+    "y1": 1037
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L13",
+   "text": "Storage, pallet position",
+   "box": {
+    "x0": 216,
+    "y0": 945,
+    "x1": 651,
+    "y1": 987
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L14",
+   "text": "15",
+   "box": {
+    "x0": 1200,
+    "y0": 1105,
+    "x1": 1267,
+    "y1": 1187
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L15",
+   "text": "125",
+   "box": {
+    "x0": 1600,
+    "y0": 1105,
+    "x1": 1696,
+    "y1": 1187
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L16",
+   "text": "1,875",
+   "box": {
+    "x0": 1980,
+    "y0": 1105,
+    "x1": 2113,
+    "y1": 1187
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L17",
+   "text": "Handling, per pallet",
+   "box": {
+    "x0": 216,
+    "y0": 1095,
+    "x1": 592,
+    "y1": 1137
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L18",
+   "text": "60",
+   "box": {
+    "x0": 1200,
+    "y0": 1255,
+    "x1": 1263,
+    "y1": 1337
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L19",
+   "text": "650",
+   "box": {
+    "x0": 1600,
+    "y0": 1255,
+    "x1": 1690,
+    "y1": 1337
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L20",
+   "text": "39,006",
+   "box": {
+    "x0": 1980,
+    "y0": 1255,
+    "x1": 2139,
+    "y1": 1337
+   },
+   "conf": 0.88,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L21",
+   "text": "Forklift hire, per hour",
+   "box": {
+    "x0": 216,
+    "y0": 1245,
+    "x1": 625,
+    "y1": 1287
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L22",
+   "text": "5",
+   "box": {
+    "x0": 1200,
+    "y0": 1405,
+    "x1": 1236,
+    "y1": 1487
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L23",
+   "text": "2,070",
+   "box": {
+    "x0": 1600,
+    "y0": 1405,
+    "x1": 1730,
+    "y1": 1487
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L24",
+   "text": "10,350",
+   "box": {
+    "x0": 1980,
+    "y0": 1405,
+    "x1": 2140,
+    "y1": 1487
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L25",
+   "text": "Packing material",
+   "box": {
+    "x0": 216,
+    "y0": 1395,
+    "x1": 532,
+    "y1": 1437
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L26",
+   "text": "10",
+   "box": {
+    "x0": 1200,
+    "y0": 1555,
+    "x1": 1262,
+    "y1": 1637
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L27",
+   "text": "900",
+   "box": {
+    "x0": 1600,
+    "y0": 1555,
+    "x1": 1688,
+    "y1": 1637
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L28",
+   "text": "9,000",
+   "box": {
+    "x0": 1980,
+    "y0": 1555,
+    "x1": 2109,
+    "y1": 1637
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L29",
+   "text": "Delivery, per trip",
+   "box": {
+    "x0": 216,
+    "y0": 1545,
+    "x1": 534,
+    "y1": 1587
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L30",
+   "text": "72,475",
+   "box": {
+    "x0": 1980,
+    "y0": 1745,
+    "x1": 2140,
+    "y1": 1827
+   },
+   "conf": 0.9,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L31",
+   "text": "Grand total (AED)",
+   "box": {
+    "x0": 1046,
+    "y0": 1735,
+    "x1": 1439,
+    "y1": 1778
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L32",
+   "text": "Paid on:",
+   "box": {
+    "x0": 196,
+    "y0": 2083,
+    "x1": 377,
+    "y1": 2120
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L33",
+   "text": "Approved by:",
+   "box": {
+    "x0": 1295,
+    "y0": 2083,
+    "x1": 1581,
+    "y1": 2128
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L34",
+   "text": "3/4/2008",
+   "box": {
+    "x0": 220,
+    "y0": 2217,
+    "x1": 420,
+    "y1": 2297
+   },
+   "conf": 0.85,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L35",
+   "text": "K. Al Mansoori",
+   "box": {
+    "x0": 1320,
+    "y0": 2217,
+    "x1": 1621,
+    "y1": 2297
+   },
+   "conf": 0.82,
+   "style": "handwritten",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

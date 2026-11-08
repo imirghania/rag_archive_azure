@@ -1,0 +1,120 @@
+{
+ "schema": 1,
+ "engine": "fixture",
+ "page_width": 2480,
+ "page_height": 3508,
+ "lines": [
+  {
+   "id": "L1",
+   "text": "INTERNAL MEMORANDUM",
+   "box": {
+    "x0": 296,
+    "y0": 305,
+    "x1": 994,
+    "y1": 346
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L2",
+   "text": "Ref: FIN/MEMO/2008/114",
+   "box": {
+    "x0": 296,
+    "y0": 362,
+    "x1": 893,
+    "y1": 406
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L3",
+   "text": "Date: 27 February 2008",
+   "box": {
+    "x0": 296,
+    "y0": 420,
+    "x1": 838,
+    "y1": 470
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L4",
+   "text": "To: Finance Director",
+   "box": {
+    "x0": 296,
+    "y0": 478,
+    "x1": 765,
+    "y1": 519
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L5",
+   "text": "From: Head of Procurement",
+   "box": {
+    "x0": 296,
+    "y0": 536,
+    "x1": 933,
+    "y1": 577
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L7",
+   "text": "Subject: Renewal of warehouse lease, Plot 118",
+   "box": {
+    "x0": 296,
+    "y0": 652,
+    "x1": 1349,
+    "y1": 702
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L9",
+   "text": "The landlord has offered to renew the Plot 118 lease for three years.",
+   "box": {
+    "x0": 296,
+    "y0": 768,
+    "x1": 1838,
+    "y1": 818
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  },
+  {
+   "id": "L10",
+   "text": "The proposed rent is unchanged from the current term.",
+   "box": {
+    "x0": 296,
+    "y0": 826,
+    "x1": 1548,
+    "y1": 876
+   },
+   "conf": 0.97,
+   "style": "printed",
+   "lang": "en",
+   "from_text_layer": false
+  }
+ ]
+}

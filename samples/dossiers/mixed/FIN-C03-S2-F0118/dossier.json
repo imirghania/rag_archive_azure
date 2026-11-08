@@ -1,0 +1,26 @@
+{
+ "schema": 1,
+ "dossier_id": "FIN-C03-S2-F0118",
+ "source": "upload",
+ "upload_id": null,
+ "uploaded_by": null,
+ "segmentation": "auto",
+ "files": [
+  {
+   "name": "invoice_batch.pdf",
+   "bytes": 367412,
+   "sha256": "8a82fb6ce00bf43f7db63d089d0679caacd6ad55d37b9c7f620bff915177aee1",
+   "pages": 2
+  },
+  {
+   "name": "memo.docx",
+   "bytes": 36687,
+   "sha256": "b5585df19921f6ed7b4af1a4bc7d7dec3d32e503e4cb89862bf49acca4b04a15"
+  },
+  {
+   "name": "notes.txt",
+   "bytes": 59,
+   "sha256": "d6c7726c05188f22a7944f635968f1949d8172cde98c60675d457a98eb134172"
+  }
+ ]
+}

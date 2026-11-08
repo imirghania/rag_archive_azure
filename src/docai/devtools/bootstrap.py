@@ -107,6 +107,8 @@ GROUP_SEED = [  # state key, department, kind, name
     ("GROUP_FIN_STEWARDS", "FIN", "steward", "grp-docai-fin-stewards"),
     ("GROUP_FIN_TREASURY", "FIN", "restricted", "grp-docai-fin-treasury"),
     ("GROUP_HR_READERS", "HR", "reader", "grp-docai-hr-readers"),
+    ("GROUP_HR_EXPERTS", "HR", "expert", "grp-docai-hr-experts"),
+    ("GROUP_HR_STEWARDS", "HR", "steward", "grp-docai-hr-stewards"),
 ]
 
 
